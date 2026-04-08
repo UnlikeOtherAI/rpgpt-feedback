@@ -1,0 +1,25 @@
+name: Gameplay Feedback
+description: Share feedback or a suggestion about gameplay
+labels: ["feedback", "user-report"]
+body:
+  - type: markdown
+    attributes:
+      value: "**Submitted via in-app report button**"
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like to share?
+    validations:
+      required: true
+  - type: input
+    id: session
+    attributes:
+      label: Session ID
+  - type: input
+    id: device
+    attributes:
+      label: Device
+  - type: input
+    id: user_id
+    attributes:
+      label: Anonymous User ID

@@ -1,0 +1,29 @@
+name: Bug Report
+description: Something went wrong during gameplay
+labels: ["bug", "user-report"]
+body:
+  - type: markdown
+    attributes:
+      value: "**Submitted via in-app report button**"
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the issue
+    validations:
+      required: true
+  - type: input
+    id: session
+    attributes:
+      label: Session ID
+      description: Auto-populated by app
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: Auto-populated by app
+  - type: input
+    id: user_id
+    attributes:
+      label: Anonymous User ID
+      description: Auto-populated by app
